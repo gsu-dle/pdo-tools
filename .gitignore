@@ -1,0 +1,8 @@
+
+*.old
+*.pem
+
+composer.phar
+composer.lock
+/vendor/
+/.vscode/

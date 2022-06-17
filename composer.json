@@ -1,0 +1,31 @@
+{
+    "name": "gastate/pdo-tools",
+    "description": "Georgia State University PDO tools",
+    "version": "1.0.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "GAState\\Tools\\pdoDB\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jeb Barger",
+            "email": "jbarger@gsu.edu"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.5",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
