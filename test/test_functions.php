@@ -74,3 +74,19 @@ echo $insert;
 // Fetch style as third parameter - More info about the PDO fetchstyle : http://php.net/manual/en/pdostatement.fetch.php
 $person_num =     $pdo->row("SELECT * FROM test WHERE firstname = :FirstName", array("FirstName"=>"Jeb"), PDO::FETCH_NUM);
 print_r($person_num);
+
+
+//Oracle Tests
+
+$pdo = new pdoDB(
+  type: 'mysql',
+  hostname: '127.0.0.1',
+  username: 'root',
+  password: 'root',
+  database: 'test',
+  port: 3306,
+  tls: TRUE,
+  key:  './client-key.pem',
+  certificate:  './client-cert.pem',
+  cacert:  './ca-cert.pem'
+);
