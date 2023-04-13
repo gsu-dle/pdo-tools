@@ -13,7 +13,7 @@ use PDOException;
 
 class pdoDB
 {
-    protected PDO $pdo;
+    public PDO $pdo;
     private bool $bConnected;
 	private array $parameters;
     # @object, PDO statement object
@@ -49,6 +49,7 @@ class pdoDB
      */	
 
     private function Connect($type, $hostname, $database, $username, $password, $port) : void
+	//oci:dbname=//host:port/SID/INSTANCE_NAME
 		{
 			global $settings;
             $this->CheckPDODriver($type);
